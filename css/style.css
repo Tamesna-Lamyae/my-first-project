@@ -1,3 +1,94 @@
-body{background-color: rgb(189, 185, 193);
-text-align: center;
+
+
+/* Appliquer la police Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+
+nav {
+    display: flex; /* Utiliser Flexbox pour afficher les éléments en ligne */
+    justify-content: space-around; /* Espacement égal entre les éléments */
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    padding: 10px; /* Espacement interne */
+}
+
+nav ul {
+    list-style-type: none; /* Supprimer les puces des listes */
+    padding: 0; /* Supprimer le rembourrage */
+}
+
+/* Style des liens dans la barre de navigation */
+nav a {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprimer le soulignement */
+    padding: 10px 20px; /* Espacement autour des liens */
+    transition: background-color 0.3s; /* Animation pour le changement de couleur de fond */
+}
+
+nav a:hover {
+    background-color: #555; /* Couleur de fond sur le survol */
+    border-radius: 5px; /* Coins arrondis sur le survol */
+}
+
+/* Styles pour les sections */
+section {
+    margin: 20px; /* Marge pour les sections */
+    padding: 20px; /* Espacement interne */
+    background-color: #fff; /* Couleur de fond des sections */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+/* Style pour les titres de section */
+h2 {
+    color: #333; /* Couleur des titres */
+}
+
+/* Styles pour le formulaire de contact */
+form {
+    display: flex;
+    flex-direction: column; /* Disposer les éléments du formulaire en colonne */
+}
+
+/* Style pour les champs de saisie */
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+    margin: 10px 0; /* Marge pour les champs de saisie */
+    padding: 10px; /* Espacement interne */
+    width: 100%; /* Largeur complète */
+    border: 1px solid #ccc; /* Style de bordure */
+    border-radius: 4px; /* Coins arrondis */
+    box-sizing: border-box; /* Inclure le rembourrage et la bordure dans la largeur */
+}
+
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #333; /* Couleur de fond pour le bouton */
+    color: white; /* Couleur du texte pour le bouton */
+    padding: 10px 15px; /* Espacement interne */
+    border: none; /* Supprimer la bordure */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Changer le curseur au survol */
+    transition: background-color 0.3s; /* Animation pour le changement de couleur de fond */
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Couleur de fond plus foncée au survol */
+}
+
+/* Style pour le pied de page */
+footer {
+    text-align: center; /* Centrer le texte dans le pied de page */
+    padding: 10px; /* Espacement interne */
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    position: relative; /* Pour le positionnement */
+    bottom: 0; /* Alignement en bas */
+    width: 100%; /* Largeur complète */
 }
